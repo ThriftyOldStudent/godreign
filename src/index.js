@@ -13,7 +13,7 @@ const Web3 = require('web3')
 const web3 = new Web3('https://bsc-dataseed1.binance.org:443')
 const textHead = document.getElementById('logo-text')
 const getAccountsResults = document.getElementById('getAccountsResult')
-const contractAdds = '0x03fBa0dD501De86ECf98930F7bDFdfce127C0E5A'
+const contractAdds = '0xC7170ab39fAA96B3861253D0874f8aA3D2A398A5'
 const COVENENT = new web3.eth.Contract(GOD_ABI, contractAdds)
 
 const currentUrl = new URL(window.location.href)
