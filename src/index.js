@@ -54,22 +54,22 @@ const initialize = () => {
       console.log(`Tulip Mania: ${checkTulipMania}`)
       if (checkANFT) {
         textHead.innerHTML = '<p>You owned my Nativity NFT!</p><p>Thanks for your support!</p><p>May Baby Jesus bless you with greatness!!!</p>'
-        textMore.innerHTML = '<p>I had received total of 0.95BAKE from your purchase.</p><p>Thank you for your generous support.</p><p><a href="https://github.com/ThriftyOldStudent/NFTofRandomness" target="_blank">You can find the source code of this webApp at github!</a></p>'
+        textMore.innerHTML = '<p>I had received total of 0.95BAKE from your purchase.</p><p>Thank you for your generous support.</p><p><a href="https://github.com/ThriftyOldStudent/godreign" target="_blank">You can find the source code of this webApp at github!</a></p>'
         image.style = 'width: 80%; margin-left: auto; margin-right: auto'
         image.src = 'respect.jpeg'
       } else if (checkFCC) {
         textHead.innerHTML = '<p>Are you serious?</p><p>Why you buy this NFT!</p>'
-        textMore.innerHTML = '<p>Whatever is the reason, you are definately a whale!</p><p>Thank you for your generous support!</p><p>Now I\'m able to pay off my PHD tuition!</p><p><a href="https://github.com/ThriftyOldStudent/NFTofRandomness" target="_blank">You can find the source code of this webApp at github!</a></p>'
+        textMore.innerHTML = '<p>Whatever is the reason, you are definately a whale!</p><p>Thank you for your generous support!</p><p>Now I\'m able to pay off my PHD tuition!</p><p><a href="https://github.com/ThriftyOldStudent/godreign" target="_blank">You can find the source code of this webApp at github!</a></p>'
         image.style = 'width: 70%; margin-left: auto; margin-right: auto'
         image.src = 'why_meme.jpeg'
       } else if (checkBBNFT) {
         textHead.innerHTML = '<p>You owned my Chinese Peony NFT!</p><p>Thanks for your support!</p><p>Now you should learn more about the real NFT!!!</p>'
-        textMore.innerHTML = '<p>It is a form of programmable unique asset!</p><p>Checkout the most basic implementation of this WebApp!</p><p><a href="https://github.com/ThriftyOldStudent/NFTofRandomness" target="_blank">You can find the source code of this webApp at github!</a></p>'
+        textMore.innerHTML = '<p>It is a form of programmable unique asset!</p><p>Checkout the most basic implementation of this WebApp!</p><p><a href="https://github.com/ThriftyOldStudent/godreign" target="_blank">You can find the source code of this webApp at github!</a></p>'
         image.style = 'width: 80%; margin-left: auto; margin-right: auto'
         image.src = 'respect.jpeg'
       } else if (checkTulipMania) {
         textHead.innerHTML = '<p>You owned my Tulip Mania NFT!</p><p>Why you buy this NFT!</p>Whatever is the reason, you are definately a whale!</p><p>Thank you for your generous support!</p><p>Now I\'m able to pay off my PHD tuition!</p>'
-        textMore.innerHTML = '<p>It is a form of programmable unique asset!</p><p>Checkout the most basic implementation of this WebApp!</p><p><a href="https://github.com/ThriftyOldStudent/NFTofRandomness" target="_blank">You can find the source code of this webApp at github!</a></p>'
+        textMore.innerHTML = '<p>It is a form of programmable unique asset!</p><p>Checkout the most basic implementation of this WebApp!</p><p><a href="https://github.com/ThriftyOldStudent/godreign" target="_blank">You can find the source code of this webApp at github!</a></p>'
         image.style = 'width: 70%; margin-left: auto; margin-right: auto'
         image.src = 'why_meme.jpeg'
       } else {
