@@ -50,7 +50,7 @@ const initialize = () => {
       })
 
       console.log(txO)
-      textHead.innerHTML = 
+      textHead.innerHTML =
       '<p>You just bought 0.000001 GOD!</p><p>And that\'s good enough!</p><p>Don\'t be greedy, you don\'t need more!</p>'
     } catch (error) {
       console.error(error)
