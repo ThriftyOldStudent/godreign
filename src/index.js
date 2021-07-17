@@ -76,8 +76,7 @@ const initialize = () => {
   }
 
   const onClickAddGod = () => {
-    addGodButton.innerText = 'Adding in progress'
-    addGodButton.disabled = true
+    addGodButton.innerText = 'Adding GOD...'
 
     ethereum.request({
       method: 'wallet_watchAsset',
@@ -87,7 +86,7 @@ const initialize = () => {
           address: contractAdds,
           symbol: 'GOD',
           decimals: 18,
-          image: 'jesus.png',
+          image: 'https://thriftyoldstudent.github.io/godreign/jesus.png',
         },
       },
     }).then((success) => {
