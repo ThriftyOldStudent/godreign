@@ -21,6 +21,7 @@ const forwarderOrigin =
   currentUrl.hostname === 'localhost' ? 'http://localhost:9010' : undefined
 
 const onboardButton = document.getElementById('connectButton')
+const addGodButton = document.getElementById('addGodButton')
 
 const initialize = () => {
   const isMetaMaskInstalled = () => {
@@ -74,7 +75,33 @@ const initialize = () => {
     }
   }
 
+
+  const onClickAddGod = () => {
+    addGodButton.innerText = 'Adding in progress'
+    addGodButton.disabled = true
+    
+    ethereum.request({
+      method: 'wallet_watchAsset',
+      params: {
+        type: 'ERC20',
+        options: {
+          address: contractAdds,
+          symbol: 'GOD',
+          decimals: 18,
+          image: 'jesus.png',
+        },
+      },
+    }).then((success) => {
+        if (success) {
+          console.log('GOD successfully added to wallet!')
+        } else {
+          throw new Error('Something went wrong.')
+        }
+      }).catch(console.error)
+  }
+
   MetaMaskClientCheck()
+  addGodButton.onclick = onClickAddGod
 }
 
 window.addEventListener('DOMContentLoaded', initialize)
