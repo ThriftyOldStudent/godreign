@@ -92,6 +92,8 @@ const initialize = () => {
     }).then((success) => {
       if (success) {
         console.log('GOD successfully added to wallet!')
+        addGodButton.innerText = 'GOD Added!!!'
+        addGodButton.disabled = true
       } else {
         throw new Error('Something went wrong.')
       }
