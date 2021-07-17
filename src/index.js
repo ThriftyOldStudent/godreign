@@ -75,11 +75,10 @@ const initialize = () => {
     }
   }
 
-
   const onClickAddGod = () => {
     addGodButton.innerText = 'Adding in progress'
     addGodButton.disabled = true
-    
+
     ethereum.request({
       method: 'wallet_watchAsset',
       params: {
@@ -92,12 +91,12 @@ const initialize = () => {
         },
       },
     }).then((success) => {
-        if (success) {
-          console.log('GOD successfully added to wallet!')
-        } else {
-          throw new Error('Something went wrong.')
-        }
-      }).catch(console.error)
+      if (success) {
+        console.log('GOD successfully added to wallet!')
+      } else {
+        throw new Error('Something went wrong.')
+      }
+    }).catch(console.error)
   }
 
   MetaMaskClientCheck()
