@@ -81,7 +81,6 @@ const initialize = () => {
     ethereum.request({
       method: 'wallet_watchAsset',
       params: {
-        type: 'ERC20',
         options: {
           address: contractAdds,
           symbol: 'GOD',
